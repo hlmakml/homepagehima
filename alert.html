@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Beranda Perpustakaan</title>
+  <!-- Link SweetAlert2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f2ff;
+      text-align: center;
+      padding-top: 80px;
+    }
+    a {
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+    a:hover {
+      background-color: #005a99;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Perpustakaan Digital</h1>
+  <p>Terima kasih telah berkunjung. Silakan isi kunjungan Anda.</p>
+  <a href="form-kunjungan.html">Formulir Kunjungan</a>
+
+  <script>
+    // Tampilkan SweetAlert saat halaman dimuat
+    window.onload = function() {
+      Swal.fire({
+        title: 'Selamat Datang!',
+        text: 'Senang bisa menerima kunjungan Anda hari ini.',
+        icon: 'info',
+        confirmButtonText: 'Lanjutkan'
+      });
+    };
+  </script>
+
+</body>
+</html>
